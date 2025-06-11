@@ -12,7 +12,21 @@
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script type="text/javascript">
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement(
+            {
+                pageLanguage: 'fr',
+                includedLanguages: 'en,es,zh,fr',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                autoDisplay: false,
+                multilanguagePage: true
+            }, 
+            'google_translate_element'
+        );
+    }
+    </script>
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
   </head>
   <body>
@@ -36,10 +50,22 @@
                 <strong>Langue</strong>
               </a>
               <ul class="translate-dropdown-content">
-                <li data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" alt="FR"> Français</li>
-                <li data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" alt="EN"> English</li>
-                <li data-lang="es"><img src="https://flagcdn.com/16x12/es.png" alt="ES"> Español</li>
-                <li data-lang="zh"><img src="https://flagcdn.com/16x12/cn.png" alt="CN"> 中文</li>
+                <li data-lang="fr">
+                    <img src="https://flagcdn.com/16x12/fr.png" alt="FR"> 
+                    <span>Français</span>
+                </li>
+                <li data-lang="en">
+                    <img src="https://flagcdn.com/16x12/gb.png" alt="EN"> 
+                    <span>English</span>
+                </li>
+                <li data-lang="es">
+                    <img src="https://flagcdn.com/16x12/es.png" alt="ES"> 
+                    <span>Español</span>
+                </li>
+                <li data-lang="zh">
+                    <img src="https://flagcdn.com/16x12/cn.png" alt="CN"> 
+                    <span>中文</span>
+                </li>
               </ul>
             </li>
           </ul>
@@ -225,7 +251,7 @@ Authentification sécurisée (JWT, OAuth, etc.).</p>
               <div class="bars">
                 <div class="info">
                   <span>JavaScript</span>
-                  <span>60%</span>
+                  <span>65%</span>
                 </div>
                 <div class="line js"></div>
               </div>
@@ -233,7 +259,7 @@ Authentification sécurisée (JWT, OAuth, etc.).</p>
                 <div class="info">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB" class="icon-lang">
                   <span>MongoDB</span>
-                  <span>70%</span>
+                  <span>80%</span>
                 </div>
                 <div class="line js"></div>
               </div>
@@ -241,7 +267,7 @@ Authentification sécurisée (JWT, OAuth, etc.).</p>
                 <div class="info">
                   <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt="Firebase" class="icon-lang">
                   <span>Firebase</span>
-                  <span>60%</span>
+                  <span>75%</span>
                 </div>
                 <div class="line bootstraps"></div>
               </div>
@@ -249,7 +275,7 @@ Authentification sécurisée (JWT, OAuth, etc.).</p>
                 <div class="info">
                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL" class="icon-lang">
                   <span>MySQL</span>
-                  <span>70%</span>
+                  <span>85%</span>
                 </div>
                 <div class="line django"></div>
               </div>
@@ -267,7 +293,7 @@ Authentification sécurisée (JWT, OAuth, etc.).</p>
               <div class="box">
                 <img src="profil1.jpg" alt="">
                 <div class="text">Mon Portfolio</div>
-                <p>#Project Details:- Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                <p>Mon portfolio présente mes compétences, projets et expériences en tant que développeur web et passionné de blockchain.</p>
                 <button class="btn_project"><a href="#">Voir le projet</a></button>
               </div>
             </div>
@@ -473,6 +499,6 @@ function googleTranslateElementInit() {
 </script>
 
 <!-- Élément pour Google Translate -->
-<div id="google_translate_element" style="position: absolute; top: -1000px;"></div>
+<div id="google_translate_element" style="position: fixed; bottom: -1000px; right: 0;"></div>
   </body>
 </html>

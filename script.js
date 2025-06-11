@@ -136,3 +136,23 @@ $(document).ready(function () {
     },
     retina_detect: true
   });
+
+  // filepath: /home/caleb-le-petit-dev-pref-de-tonto/A-PROJET PERSO/Junior Okawe/script.js
+function translateLanguage(lang) {
+    const element = document.querySelector('.goog-te-combo');
+    if (element) {
+        element.value = lang;
+        element.dispatchEvent(new Event('change'));
+    }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+    // Ajout des écouteurs d'événements pour chaque option de langue
+    document.querySelectorAll('.translate-dropdown-content li').forEach(item => {
+        item.addEventListener('click', function(e) {
+            e.preventDefault();
+            const lang = this.getAttribute('data-lang');
+            translateLanguage(lang);
+        });
+    });
+});
