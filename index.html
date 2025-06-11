@@ -1,16 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr"> <!-- Changement de "en" à "fr" -->
   <head>
     <link rel="icon" href="496382671_1127357929437633_7906430583845513319_n.jpg">
-    <title>Junior Okawe Page</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" />
+    <title>Junior Okawe Portfolio</title>
+    <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Content-Language" content="fr">
     <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css'>
 <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css'>
 <link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;600;700;800;900&family=Ubuntu:wght@300;400;500;700&display=swap"rel="stylesheet'>
 <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css'>
 <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <link rel="stylesheet" href="styles.css" />
+    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
   </head>
   <body>
@@ -20,7 +22,7 @@
       <!-- Header -->
       <nav class="navbar">
         <div class="max-width">
-          <div class="logo"><a href="#"><span>Mbia Digital Learn</span><span>.com</span></a></div>
+          <div class="logo"><a href="#"><span>Mbia Digital Learn</span></a></div>
           <ul class="menu">
             <li><a href="#home" class="menu-btn"><strong>Acceuil</strong></a></li>
             <li><a href="#about" class="menu-btn"><strong>A propos</strong></a></li>
@@ -28,6 +30,18 @@
             <li><a href="#skills" class="menu-btn"><strong>Competences</strong></a></li>
             <li><a href="#projects" class="menu-btn"><strong>Projets</strong></a></li>
             <li><a href="#contact" class="menu-btn"><strong>Contact</strong></a></li>
+            <li class="translate-dropdown">
+              <a href="#" class="menu-btn translate-btn">
+                <i class="fas fa-globe"></i>
+                <strong>Langue</strong>
+              </a>
+              <ul class="translate-dropdown-content">
+                <li data-lang="fr"><img src="https://flagcdn.com/16x12/fr.png" alt="FR"> Français</li>
+                <li data-lang="en"><img src="https://flagcdn.com/16x12/gb.png" alt="EN"> English</li>
+                <li data-lang="es"><img src="https://flagcdn.com/16x12/es.png" alt="ES"> Español</li>
+                <li data-lang="zh"><img src="https://flagcdn.com/16x12/cn.png" alt="CN"> 中文</li>
+              </ul>
+            </li>
           </ul>
           <div class="menu-btn">
             <i class="fas fa-bars"></i>
@@ -51,25 +65,62 @@
 
       <!--  About  -->
       <section class="about" id="about">
+  <div class="max-width">
+    <h2 class="title">A propos de moi</h2>
+    
+    <!-- Photo de profil en haut -->
+    <div class="profile-container">
+      <div class="profile-card">
+        <div class="profile-front">
+          <img src="profil1.jpg" alt="Profile Image"/>
+        </div>
+        <div class="profile-back">
+          <h3>Junior Okawe</h3>
+          <p>Votre Développeur Backend</p>
+        </div>
+      </div>
+    </div>
 
-        <div class="max-width">
-          <h2 class="title">A propos de moi</h2>
-          <div class="about-content">
-            <div class="column left">
-              <img src="profil1.jpg" alt="Profile Image"/>
-            </div>
-            <div class="column right">
-    <div class="text">Moi c'est Junior Okawe et je suis <span class="typing-2"></span></div>
-    <p>Je recherche un poste de débutant au sein d'une organisation prestigieuse où je pourrai mettre à profit mes compétences et enrichir mes connaissances professionnelles. Je maîtrise les nouvelles technologies.</p>
-    <br>
-    <div class="text">Pourquoi travailler avec moi</div>
-    <p>Je suis un excellent communicateur et j'aime investir le temps nécessaire pour bien comprendre le problème du client.</p>
+    <!-- Contenu en dessous -->
+    <div class="about-content">
+      <div class="about-header">
+        <div class="intro-text">
+          <h2>Moi c'est Junior Okawe</h2>
+          <h3 class="typewriter"><span class="typing-2"></span></h3>
+        </div>
+        
+        <div class="description">
+          <p>Je recherche un poste de débutant au sein d'une organisation prestigieuse où je pourrai mettre à profit mes compétences et enrichir mes connaissances professionnelles. Je maîtrise les nouvelles technologies.</p>
+        </div>
+      </div>
 
-    <a href="mon-cv.pdf" download="Junior Okawe-CV.pdf">Télécharger mon CV</a>
-</div>
+      <div class="why-me-section">
+        <h3>Pourquoi travailler avec moi ?</h3>
+        <div class="features">
+          <div class="feature-item">
+            <i class="fas fa-comments"></i>
+            <p>Excellent communicateur</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-search-plus"></i>
+            <p>Analyse approfondie des besoins</p>
+          </div>
+          <div class="feature-item">
+            <i class="fas fa-clock"></i>
+            <p>Investissement temps optimal</p>
           </div>
         </div>
-      </section>
+      </div>
+
+      <div class="cta-section">
+        <a href="mon-cv.pdf" class="cv-button" download="Junior Okawe-CV.pdf">
+          <i class="fas fa-download"></i>
+          Télécharger mon CV
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 
       <!-- Services -->
       <section class="services" id="services">
@@ -79,22 +130,27 @@
             <div class="card">
               <div class="box">
                 <i class="fas fa-laptop-code"></i>
-                <div class="text">développement backend</div>
-                <p>Votre prochain développeur backend, spécialisé en Node.js, Express, API REST sécurisées, base de données MySQL ou MongoDB, logique métier optimisée, architecture scalable, et intégration transparente avec le frontend.</p>
+                <div class="text">Conception & Gestion de Base de Données</div>
+                <p>Modélisation de bases de données relationnelles (MySQL, PostgreSQL) ou NoSQL (MongoDB, Redis). Optimisation des requêtes pour la performance.
+Backup & migration de données.</p>
               </div>
             </div>
             <div class="card">
               <div class="box">
                 <i class="fas fa-user-secret"></i>
-                <div class="text">Secret de l'utilisateur</div>
-                <p>Je m'assure qu'aucune donnée sensible n'est incluse dans le code source et stockée en dehors du dossier du projet. De plus, toutes les données stockées par User Secrets ne sont pas chiffrées.</p>
+                <div class="text">Vulgarisation de la Technologie Blockchain</div>
+                <p>Passionné par les blockchains, je propose un accompagnement sur mesure pour démocratiser le Web3 via des formats simples et pédagogiques.</p>
               </div>
             </div>
             <div class="card">
               <div class="box">
                 <i class="fas fa-code"></i>
-                <div class="text">Community Manager</div>
-                <p>Votre prochain Community Manager, expert en animation de communauté, stratégie réseaux sociaux, création de contenu engageant, modération proactive, reporting des performances, et fidélisation de votre audience.</p>
+                <div class="text">Création d’APIs REST & GraphQL</div>
+                <p>Développement d’API robustes, scalables et documentées.
+
+Intégration avec des frontends, des apps mobiles ou d'autres systèmes.
+
+Authentification sécurisée (JWT, OAuth, etc.).</p>
               </div>
             </div>
           </div>
@@ -107,29 +163,34 @@
           <h2 class="title">Mes compétences</h2>
           <div class="skills-content">
             <div class="column left">
+              <div class="experience-section">
+    <h3 class="section-title">Experiences et stages</h3>
+    <ul class="experience-list">
+      <li class="intern-item">
+        <span class="company">LightFinance</span>
+        <p class="description">Start-up camerounaise dans le domaine de la finance et des blockchains</p>
+      </li>
+      <li class="intern-item">
+        <span class="company">Mbia Digital Learn</span>
+        <p class="description">Plateforme de formation blockchain</p>
+      </li>
+      <li class="intern-item">
+        <span class="company">École conventionnée française d'Owendo</span>
+        <p class="description">Libreville, Gabon</p>
+      </li>
+    </ul>
+  </div>
 
-              <div class="text">Experiences et stages</div>
-              <p>
-                <li class="intern">LightFinance "Start-up camerounaise dans le domaine de la finance et des blckchains"</li><br>
-                <li class="intern">Mbia Digital Learn "plateforme de formation blockchain"</li><br>
-                <li class="intern">Ecole conventionnée francaise d'Owendo de Libreville/Gabon"</li>
-              </p>
-
-              <br>
-              <div class="text">PROJET</div>
-
-              <p>
-                <li class="project">Portfolio (HTML, CSS, Javascripts)</li><br>
-                <li class="project">TchopShap (React,Node.js, Express, MySQL)</li><br>
-                <li class="project">Aero-aspir plateforme de vente d'aspirateur dans fil</li><br>
-                <li class="project">Refonte du site de la DGDI (HTML, CSS, javascript)</li>
-              </p>
-
-              <br>
-              <div class="text">DÉVELOPPEMENT DES COMPÉTENCES</div>
-
-              <p>Je connais et travaille quotidiennement avec HTML, CSS, JavaScript, Bootstrap, React js et d'autres frameworks modernes.</p>
-              <a href="#" target="blank">Get Educate...</a>
+  <div class="skills-section">
+    <h3 class="section-title">DÉVELOPPEMENT DES COMPÉTENCES</h3>
+    <p class="skills-description">
+      Je connais et travaille quotidiennement avec HTML, CSS, JavaScript, Bootstrap, React.js et d'autres frameworks modernes.
+    </p>
+    <a href="#" class="edu-link" target="_blank">
+      En savoir plus
+      <i class="fas fa-arrow-right"></i>
+    </a>
+  </div>
             </div>
             <div class="column right">
               <div class="bars">
@@ -371,6 +432,47 @@
     }
   });
 </script>
+<script>
+function changeLanguage(languageCode) {
+  const iframe = document.querySelector('.goog-te-menu-frame');
+  if (!iframe) return;
 
+  const items = iframe.contentDocument.querySelectorAll('.goog-te-menu2-item');
+  
+  for (let item of items) {
+    if (item.textContent.includes(languageCode)) {
+      item.click();
+      return;
+    }
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  // Initialisation de Google Translate
+  const googleTranslateScript = document.createElement('script');
+  googleTranslateScript.src = '//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit';
+  document.body.appendChild(googleTranslateScript);
+
+  // Gestionnaire de clic pour les options de langue
+  document.querySelectorAll('.translate-dropdown-content li').forEach(item => {
+    item.addEventListener('click', (e) => {
+      const lang = e.currentTarget.getAttribute('data-lang');
+      changeLanguage(lang);
+    });
+  });
+});
+
+function googleTranslateElementInit() {
+  new google.translate.TranslateElement({
+    pageLanguage: 'fr',
+    includedLanguages: 'en,es,zh,fr',
+    layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+    autoDisplay: false
+  }, 'google_translate_element');
+}
+</script>
+
+<!-- Élément pour Google Translate -->
+<div id="google_translate_element" style="position: absolute; top: -1000px;"></div>
   </body>
 </html>
