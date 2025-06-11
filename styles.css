@@ -872,6 +872,21 @@ footer span a:hover {
   }
 }
 
+@media (max-width: 1200px) {
+  .max-width {
+    padding: 0 50px;
+  }
+  
+  .features {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .feature-item {
+    width: calc(50% - 2rem);
+  }
+}
+
 @media (max-width: 991px) {
   .social-menu ul li a {
     left: 114px;
@@ -943,6 +958,54 @@ footer span a:hover {
   }
 }
 
+@media (max-width: 768px) {
+  .about .about-content .column {
+    width: 100%;
+  }
+  
+  .feature-item {
+    width: 100%;
+  }
+  
+  .intro-text h2 {
+    font-size: 2rem;
+  }
+  
+  .description p {
+    font-size: 1rem;
+  }
+  
+  .services .serv-content .card {
+    width: 100%;
+  }
+  
+  .profile-container {
+    width: 200px;
+    height: 200px;
+  }
+  
+  .navbar .menu {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    left: -100%;
+    top: 0;
+    background: #111;
+    padding-top: 80px;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+  
+  .navbar .menu.active {
+    left: 0;
+  }
+  
+  .translate-dropdown-content {
+    position: static;
+    width: 100%;
+  }
+}
+
 @media (max-width: 690px) {
   .max-width {
     padding: 0 23px;
@@ -962,33 +1025,81 @@ footer span a:hover {
 }
 
 @media (max-width: 500px) {
+  .max-width {
+    padding: 0 20px;
+  }
+  
   .home .home-content .text-2 {
-    font-size: 50px;
+    font-size: 40px;
   }
+  
   .home .home-content .text-3 {
-    font-size: 27px;
+    font-size: 25px;
   }
+  
   .about .about-content .right .text,
   .skills .skills-content .left .text {
-    font-size: 19px;
+    font-size: 17px;
   }
+  
   .contact .right form .fields {
     flex-direction: column;
   }
-  .contact .right form .name,
-  .contact .right form .email {
-    margin: 0;
+  
+  .profile-container {
+    width: 180px;
+    height: 180px;
   }
-  .right form .error-box {
-    width: 150px;
+  
+  .why-me-section h3 {
+    font-size: 1.5rem;
   }
-  .scroll-up-btn {
-    right: 15px;
-    bottom: 15px;
-    height: 38px;
-    width: 35px;
-    font-size: 23px;
-    line-height: 38px;
+}
+
+/* Animation preservation */
+@media (prefers-reduced-motion: no-preference) {
+  .profile-container:hover .profile-card {
+    transform: rotateY(180deg);
+  }
+  
+  .feature-item:hover {
+    transform: translateY(-10px);
+  }
+  
+  .services .card:hover {
+    transform: scale(1.05);
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  @keyframes slideUp {
+    from {
+      opacity: 0;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}
+
+/* Performance optimizations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
 
