@@ -4,6 +4,8 @@
   box-sizing: border-box;
   text-decoration: none;
 }
+
+
 .icon-lang{
   height: 50px;
   width: 50px;
@@ -147,11 +149,13 @@ section .title::after {
 
 /*  Nav Logo Span Linear-Gradient  */
 .navbar .logo a span {
-  background: linear-gradient(135deg, #f7f8f9, #fcfcf9, rgb(248, 248, 249));
+  background: linear-gradient(135deg, #f7f8f9, #fcfcf9, rgb(248, 248, 248));
+  background-clip: text; /* ← Ajout de la version standard */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   transition: all 0.3s ease;
 }
+
 
 .navbar.sticky .logo a span {
   color: #fff;
@@ -258,6 +262,7 @@ section .title::after {
 .home .home-content .text-3 span {
   color: #1e3551;
   background: linear-gradient(135deg, #f1f1f2, #fff, rgb(249, 247, 248));
+  background-clip: text; /* ← Ajout de la version standard */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: 500;
@@ -287,12 +292,15 @@ section .title::after {
   background: radial-gradient(#e1efff, white);
 }
 .about .title::after {
-  content: "—Who I Am ?—";
+  content: "_Who I Am ?–";
   text-overflow: ellipsis;
-  display: -webkit-inline-box;
-  -webkit-line-clamp: 3;
+  overflow: hidden;
+  display: -webkit-box;
   -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  line-clamp: 3; /* Préfixe standard */
 }
+
 
 .about .about-content .left {
   width: 45%;
@@ -319,6 +327,7 @@ section .title::after {
 .about .about-content .right .text span {
   /* color: #1e3551; */
   background: linear-gradient(135deg, #041d3d, #342f2f, rgb(11, 8, 9));
+  background-clip: text; /* ← Ajout de la version standard */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

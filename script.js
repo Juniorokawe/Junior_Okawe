@@ -49,16 +49,6 @@ $(document).ready(function () {
     loop: true
   });
 
-  var typed = new Typed(".typing-2", {
-    strings: [
-      "Dévéloppeur back-end",
-      "un passionné de la blockchain Bitcoin",
-      "Fondateur de Mbia Digital Learn",
-    ],
-    typeSpeed: 100,
-    backSpeed: 60,
-    loop: true
-  });
 
   //  Owl Carousel  //
 
